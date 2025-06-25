@@ -1,159 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genz Fashion</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      font-family: "Montserrat", sans-serif;
+    }
+
+    .font-bebas-neue {
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    .font-roboto {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .primary-btn {
+      width: 170px;
+      height: 60px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+    }
+  </style>
+  <title>GENZ Winter Collection</title>
 </head>
-<body>
-  
+
+<body class="bg-[#FFFBF0]">
+
+  <header class="px-5 py-10 pt-7 md:px-32">
+    <nav class="flex justify-between items-center md:mb-24">
+      <div class="logo flex items-center gap-2">
+        <img src="./icons/logo_icon.png" alt="logo-icon" class="w-[37px] h-[26px]">
+        <p class="text-black text-[16px] font-bold">
+          <span class="text-[#A4BC46]">GENZ</span> Fashion
+        </p>
+      </div>
+      <div class="nav-item md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-item hidden md:block">
+        <ul class="flex gap-5 font-roboto font-medium">
+          <li>Home</li>
+          <li>Products</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero md:flex md:items-center">
+      <div class="text py-[50px] pr-8">
+        <h1 class="font-bebas-neue text-6xl pb-4 md:pb-0">
+          <span class="text-[#FABE4C] block">Be the Genzs</span> of Winter
+        </h1>
+        <p class="font-roboto text-base w-80">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <button
+          class="primary-btn font-roboto text-white font-medium flex gap-2 justify-center items-center mt-4">
+          <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+        </button>
+      </div>
+      <div class="banner mt-[90px] md:mt-0 md:ml-[260px]">
+        <img src="./images/model.png" alt="model" class="w-full">
+      </div>
+    </div>
+  </header>
+
+  <section class="my-20 md:px-[135px]">
+    <h2 class="font-bebas-neue text-4xl text-center md:text-left mb-10">WOMAN JACKET</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="card w-[340px] h-[580px] shadow-xl rounded-[20px] mx-auto px-5 pt-3">
+        <div class="bg-[#f1f1f1] rounded-2xl w-[304px] h-[327px] flex justify-center items-center mx-auto my-4">
+          <img src="./images/jacket-1.png" alt="jacket_1" class="size-72 block">
+        </div>
+        <h3 class="font-roboto text-2xl font-bold mb-3">Yellow Coat Jacket</h3>
+        <p class="font-roboto text-base text-[#3E3E3E] mb-3">Elegant winter jacket with warm lining and modern design.</p>
+        <div class="flex justify-between items-center">
+          <p class="text-yellow-400 text-4xl font-extrabold">$234</p>
+          <button class="primary-btn text-white font-medium flex gap-2 items-center px-4">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card w-[340px] h-[580px] shadow-xl rounded-[20px] mx-auto px-5 pt-3">
+        <div class="bg-[#f1f1f1] rounded-2xl w-[304px] h-[327px] flex justify-center items-center mx-auto my-4">
+          <img src="./images/jacket-2.png" alt="jacket_2" class="size-72 block">
+        </div>
+        <h3 class="font-roboto text-2xl font-bold mb-3">Gray Puffer Jacket</h3>
+        <p class="font-roboto text-base text-[#3E3E3E] mb-3">Stylish puffer jacket ideal for cold urban weather.</p>
+        <div class="flex justify-between items-center">
+          <p class="text-yellow-400 text-4xl font-extrabold">$199</p>
+          <button class="primary-btn text-white font-medium flex gap-2 items-center px-4">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card w-[340px] h-[580px] shadow-xl rounded-[20px] mx-auto px-5 pt-3">
+        <div class="bg-[#f1f1f1] rounded-2xl w-[304px] h-[327px] flex justify-center items-center mx-auto my-4">
+          <img src="./images/jacket-3.png" alt="jacket_3" class="size-72 block">
+        </div>
+        <h3 class="font-roboto text-2xl font-bold mb-3">Black Leather Jacket</h3>
+        <p class="font-roboto text-base text-[#3E3E3E] mb-3">Sleek leather jacket for a bold winter statement.</p>
+        <div class="flex justify-between items-center">
+          <p class="text-yellow-400 text-4xl font-extrabold">$279</p>
+          <button class="primary-btn text-white font-medium flex gap-2 items-center px-4">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-20 md:px-[135px]">
+    <h2 class="font-bebas-neue text-4xl text-center md:text-left mb-10">MAN JACKET</h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="card w-[340px] h-[580px] shadow-xl rounded-[20px] mx-auto px-5 pt-3">
+        <div class="bg-[#f1f1f1] rounded-2xl w-[304px] h-[327px] flex justify-center items-center mx-auto my-4">
+          <img src="./images/jacket-4.png" alt="jacket_4" class="size-72 block">
+        </div>
+        <h3 class="font-roboto text-2xl font-bold mb-3">Navy Quilted Jacket</h3>
+        <p class="font-roboto text-base text-[#3E3E3E] mb-3">Durable quilted jacket with insulated warmth.</p>
+        <div class="flex justify-between items-center">
+          <p class="text-yellow-400 text-4xl font-extrabold">$249</p>
+          <button class="primary-btn text-white font-medium flex gap-2 items-center px-4">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card w-[340px] h-[580px] shadow-xl rounded-[20px] mx-auto px-5 pt-3">
+        <div class="bg-[#f1f1f1] rounded-2xl w-[304px] h-[327px] flex justify-center items-center mx-auto my-4">
+          <img src="./images/jacket-5.png" alt="jacket_5" class="size-72 block">
+        </div>
+        <h3 class="font-roboto text-2xl font-bold mb-3">Hooded Winter Coat</h3>
+        <p class="font-roboto text-base text-[#3E3E3E] mb-3">Cozy longline coat with full hood coverage.</p>
+        <div class="flex justify-between items-center">
+          <p class="text-yellow-400 text-4xl font-extrabold">$269</p>
+          <button class="primary-btn text-white font-medium flex gap-2 items-center px-4">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card w-[340px] h-[580px] shadow-xl rounded-[20px] mx-auto px-5 pt-3">
+        <div class="bg-[#f1f1f1] rounded-2xl w-[304px] h-[327px] flex justify-center items-center mx-auto my-4">
+          <img src="./images/jacket-6.png" alt="jacket_6" class="size-72 block">
+        </div>
+        <h3 class="font-roboto text-2xl font-bold mb-3">Classic Wool Jacket</h3>
+        <p class="font-roboto text-base text-[#3E3E3E] mb-3">Timeless wool jacket with refined style.</p>
+        <div class="flex justify-between items-center">
+          <p class="text-yellow-400 text-4xl font-extrabold">$259</p>
+          <button class="primary-btn text-white font-medium flex gap-2 items-center px-4">
+            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
+
 </html>
-=======
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- CSS  -->
-    <style>
-        * {
-            font-family: "Montserrat", sans-serif;
-            font-style: normal;
-            /* box-sizing: content-box; */
-        }
-
-        .font-bebas-neue {
-            font-family: "Bebas Neue", sans-serif;
-
-        }
-
-        .font-roboto {
-            font-family: "Roboto", sans-serif;
-
-        }
-
-        .primary-btn {
-            width: 170px;
-            height: 60px;
-            border-radius: 10px;
-            background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
-        }
-    </style>
-    <title>Document</title>
-</head>
-
-<body>
-
-   <header class="bg-[#FFFBF0] px-5 py-10 pt-7">
-
-        <nav class="flex  justify-between items-center">
-          <div class="logo flex">
-                <img src="./icons/logo_icon.png" alt="logo-icon" class="logo-svg w-[37px] h-[26px]">
-                <p class="logo-text text-black text-[16px] font-bold"><span class=" text-[#A4BC46]">GENZ</span>
-                    Fashion
-                </p>
-            </div>
-
-            <div class="nav-item md:hidden">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="nav-item hidden md:block  ">
-                <ul class="flex gap-5">
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                </ul>
-            </div>
-
-             </nav>
-
-
-        <div class="hero-area">
-            <div class="hero">
-               <div class="text py-[50px] pr-8">
-                    <h1 class="hero-head font-bebas-neue text-6xl pb-4"><span class="font-bebas-neue text-[#FABE4C]">Be the
-                            Genzs</span>
-                        of Winter</h1>
-                         <p class="hero-para font-roboto text-base">Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry.</p>
-                </div>
-                <button class="primary-btn font-roboto text-white font-medium flex gap-2 justify-center items-center"><iAdd commentMore actions
-                        class="fa-solid fa-cart-shopping"></i>BUY NOW</button>
-                <div class="banner pt-[100px]">
-                    <img src="./images/model.png" alt="model" class="size-full">
-                </div>
-            </div>
-        </div>
-
-         </header>
-
-    <!-- <div class="wmn-area">
-        <div class="wmn">
-            <h2 class="wmn-head">WOMAN JACKET</h2>
-            <div class="wmn-card">
-                <div class="card">
-                    <div class="card-img"></div>
-                    <h3 class="card-title">Yellow Coat Jacket</h3>
-                    <p class="card-para">Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry.</p>
-                    <div class="price-btn">
-                        <p class="price">$234</p>
-                        <button>BUY NOW</button>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="men-area">
-        <div class="men">
-            <h2 class="men-head">WOMAN JACKET</h2>
-
-            <div class="men-card">
-                <div class="card">
-                    <div class="card-img"></div>
-                    <h3 class="card-title">Yellow Coat Jacket</h3>
-                    <p class="card-para">Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry.</p>
-                    <div class="price-btn">
-                        <p class="price">$234</p>
-                        <button>BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="end-area">
-        <div class="end">
-            <div class="end-list">
-                <div class="list-item"></div>
-            </div>
-            <div class="end-banner"></div>
-        </div>
-    </div> -->
-
-</body>
->>>>>>> master
